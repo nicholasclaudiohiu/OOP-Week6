@@ -1,10 +1,18 @@
 package Week6_nicholasclaudiohiu.id.ac.umn;
 
-public class Handphone {
+class Handphone extends Barang {
+    private String warna;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public Handphone(int id, String nama, double harga, int stok, String warna) {
+        super(id, nama, harga, stok);
+        this.warna = warna;
+    }
 
-	}
+    public String getWarna() { return warna; }
 
+    @Override
+    public double getHargaJual() {
+        return harga;
+    }
 }
+
